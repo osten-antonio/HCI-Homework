@@ -2,64 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=2880, initial-scale=1.0">
-    <meta name="viewport" content="height=1800, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepperoni Pizza</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://images.seeklogo.com/logo-png/53/1/pizza-burger-logo-png_seeklogo-536669.png">
 </head>
 <body>
-    <div style="height: 10vh; width:100%; border-bottom: solid 5px; margin: 0; border-top:0; border-bottom: solid 5px #8c0000;" class="foot">
-        <div class="Icon">
-            <img style="width: 100px; float:left;" src="https://images.seeklogo.com/logo-png/53/1/pizza-burger-logo-png_seeklogo-536669.png" alt="Picture here">
-            <h1 style="color:white; float:left; margin-left:2%  ;">Pizza Burger</h1>
+    <div style="background-color: #300101; height: fit-content; width: 100%; border-bottom: solid 5px #8c0000; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 1rem 2%; box-sizing: border-box;">
+        <!-- Logo and Title Section (flex container) -->
+        <div class="Icon" style="display: flex; align-items: center; flex: 1 1 40%; justify-content: flex-start; margin-bottom: 1rem;">
+            <img style="width: 20vw; min-width: 40px; max-width: 100px; height: auto;" src="https://images.seeklogo.com/logo-png/53/1/pizza-burger-logo-png_seeklogo-536669.png">
+            <h1 style="color: white; margin-left: 10px; font-size: max(2.778vw,17px); font-weight: bold;">Pizza Burger</h1>
         </div>
-        <div class="topbuttondiv">
+        <!-- Navigation Buttons (flex container) -->
+        
+        <div class="topbuttondiv" style="display: flex; align-items: center; flex-wrap: wrap; justify-content: center; flex: auto; gap: 10px;">
+            <a href="index.html">
+                <button class="topbutton" style="font-size: max(1.667vw,11px); min-width: 200px; padding-bottom: 5%;"">Home</button>
+            </a>   
             <a href="burgerpizzapage.html">
-                <button class="topbutton" style="height: 10vh; font-size: x-large;">Cheese and Pepperoni Pizza Burger</button>
+                <button class="topbutton" style="font-size: max(1.667vw,11px); min-width: 200px; padding-bottom: 5%;">Cheese and Pepperoni Pizza Burger</button>
             </a>
             <a href="cheeseburger page.html">
-                <button class="topbutton" style="height: 10vh; font-size: x-large;">Cheese Burger</button>
+                <button class="topbutton" style="font-size: max(1.667vw,11px); min-width: 200px; padding-bottom: 5%;"">Cheese Burger</button>
             </a>
-            <a href="index.html">
-                <button class="topbutton" style="height: 10vh; font-size: x-large;">Home</button>
-            </a>    
+ 
         </div>
     </div>
+    
     <center>
-        <center>
-            <img src="Pepperoni Pizza.jpg" alt="" style="margin: 30px 0 10px 0; width: 400px;">
-        </center>
-        <h1 style="color: maroon; font-size: xxx-large;">Pepperoni Pizza</h1>
-        <p style="font-size: x-large; color:maroon; margin-left: 20%; margin-right: 20%; text-align: center;">
+    <div style=" max-width:350px; min-width: 60px;">
+        <img src="Pepperoni Pizza.jpg" alt="" style="max-width:75%; height: auto; margin: 30px auto 10px auto;">
+        <h1 style="color: maroon; font-size: max(2.5vw, 15px); text-align: center;">Pepperoni Pizza</h1>
+        <p style="font-size: max(1.25vw, 9px); color: maroon; text-align: center;">
             Indulge in our signature Pepperoni Pizza, featuring a hand-tossed, golden crust baked to perfection. Covered with a generous layer of rich, melted mozzarella cheese, this pizza is topped with thin slices of savory, zesty pepperoni that crisp up beautifully in the oven. Finished with a hint of Italian herbs and a drizzle of extra virgin olive oil, this classic favorite delivers a deliciously bold and satisfying flavor in every bite.
-
         </p>
+    </div>
     </center>
-    <h1 class="Signatures" id="main">Extra toppings</h1>
-    <table style="width: 100%;">
-        <tr>
-            <td style="width: fit-content;"><center>
-                <img src="https://britneybreaksbread.com/wp-content/uploads/2021/05/Roasted-Mushroom-and-Pepperoni-Pizza-4-scaled.jpg" style="width: 47%;">
-            </center>
-            </td>
-            <td style="width: 50%;">
-                <ul style="list-style-type:circle">
-                    <li class="extratoppings">Extra cheese</li>
-                    <li class="extratoppings">Mushroom addon</li>
-                    <li class="extratoppings">Ham addon</li>
-                    <li class="extratoppings">Mozzarela addon</li>
-                    <li class="extratoppings">Olive addon</li>
-                    <li class="extratoppings">Pineapple (ew)</li>
-                    <li class="extratoppings">Extra pepperoni</li>
-                    <li class="extratoppings">Extra garlic</li>
-                    <li class="extratoppings">truffle oil</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+    <h1 class="Signatures" id="main" style="margin-bottom: 5%;">Extra toppings</h1>
+
+    <div style="width: 100%; display: flex; flex-direction: row; flex-wrap: wrap;">
+        <div style="display: flex; justify-content: center; align-items: center; width: 50%; margin:auto;">
+            <img src="https://britneybreaksbread.com/wp-content/uploads/2021/05/Roasted-Mushroom-and-Pepperoni-Pizza-4-scaled.jpg" style="min-width: 200px; max-width:300px;">
+        </div>
+        <div style="text-align: center; padding:0 10% 0 10%;">
+            <ul style="list-style-type:circle">
+                <li class="extratoppings">Extra cheese</li>
+                <li class="extratoppings">Mushroom addon</li>
+                <li class="extratoppings">Ham addon</li>
+                <li class="extratoppings">Mozzarela addon</li>
+                <li class="extratoppings">Olive addon</li>
+                <li class="extratoppings">Pineapple (ew)</li>
+                <li class="extratoppings">Extra pepperoni</li>
+                <li class="extratoppings">Extra garlic</li>
+                <li class="extratoppings">truffle oil</li>
+            </ul>
+        </div>
+    </div>
     <details>
-        <summary>
+        <summary style="margin-bottom: 1%;">
             <h1 class="Signatures" id="main">Recipe ▼</h1>
         </summary>
         <center>
@@ -103,39 +104,62 @@
             <li style="margin-right: 2%; margin-top: 2%;">Cook the pizza for 6 minutes, then rotate the pizza halfway so it cooks evenly. Cook for another 6 to 8 minutes until the crust is golden brown and charred in spots</li>
         </ol>
     </details>
-    <details>
-        <summary>
-            <h1 class="Signatures" id="main">Feedback ▼</h1>
-        </summary>
-        <form class="review-container">
-            <label for="Email" style="margin-left: 0.5%; color: maroon; font-weight: bold; font-size: larger;">Email: </label>
-            <input type="email" id="Email" name="Email" placeholder="Email">
-            <label for="Password" style="margin-left: 1%; color: maroon; font-weight: bold; font-size: larger;">Password: </label>
-            <input type="password" id="Password" name="Password" placeholder="Password">
-            <h1 style="color: maroon; margin-left: 0.5%;">How was the service?</h1>
-            <textarea id="comment" placeholder="Write your experience here..." rows="4"></textarea>
-            <button id="submitReview">Submit Review</button>
-            <h1 style="color: maroon; margin-left: 0.5%">How was the food?</h1>
-            <textarea id="comment" placeholder="Write your experience here..." rows="4"></textarea>
-            <button id="submitReview">Submit Review</button>
-        </form>
-    </details>
+        <details>
+            <summary>
+                <h1 class="Signatures" id="main">Feedback ▼</h1>
+            </summary>
+            <form style="display: flex; flex-wrap: wrap; flex-direction: column;">
+                <div style="display: flex; flex-wrap: wrap; flex-direction: row;">
+                    <div style="width: fit-content; display: flex; flex-direction: row;">
+                    <label for="Email" style="margin-top: 3%; margin-left: 0.5%; color: maroon; font-weight: bold; font-size: max(1.667vw,13px);">Email: </label>
+                    <input type="email" id="Email" name="Email" placeholder="Email">
+                    </div>
+                    <div style="width: fit-content; display: flex; flex-direction: row">
+                <label for="Password" style="margin-top: 3%; margin-left: 1%; color: maroon; font-weight: bold; font-size: max(1.667vw,13px);">Password: </label>
+                <input type="password" id="Password" name="Password" placeholder="Password">
+                </div>
+                </div>
+                <h1 style="color: maroon; margin-left: 0.5%; font-size: max(1.667vw,13px);">How was the service?</h1>
+                <textarea id="comment" placeholder="Write your experience here..." rows="4"></textarea>
+                <button id="submitReview">Submit Review</button>
+                <h1 style="color: maroon; margin-left: 0.5%; font-size: max(1.667vw,13px);">How was the food?</h1>
+                <textarea id="comment" placeholder="Write your experience here..." rows="4"></textarea>
+                <button id="submitReview">Submit Review</button>
+            </form>
+        </details>
     <section class="foot">
-        <p style="color: white; margin:10px; font-size: larger;"><b>Pizza Burger -  Fx Sudirman - Jl. Jenderal Sudirman</b></p>
-        <p style="color: white; margin:10px;">Telephone: 081234123412</p>
-        <p style="color: white; margin:10px;">Email: pizzaburger@pizzaburger.com</p>
-        <p style="color: white; margin:10px;">Fax: (+6221) 12341234</p>
-
-        
-        <a style="float:right; margin: 5px; margin-right: 1%;" href="x.com">Twitter</a><img src="https://img.icons8.com/?size=48&id=13963&format=png" style="width:20px;height:20px;float:right;border: 0;"> 
-        <a style="float:right;margin: 5px;" href="instagram.com">Instagram</a><img src="https://img.icons8.com/?size=48&id=32323&format=png" style="width:20px;height:20px;float:right;border: 0;"> 
-        <a style="float:right;margin: 5px;" href="facebook.com">Facebook</a><img src="https://img.icons8.com/?size=48&id=13912&format=png" style="width:20px;height:20px;float:right;border: 0;">
-        <a style="float:right;margin: 5px;">081234123412</a><img src="https://img.icons8.com/?size=48&id=16713&format=png" style="width:20px;height:20px;float:right;border: 0;">
-
-        <p style="color: white; float: right; margin-right: 15%;">© 2024 pizzaburger.com | All rights reserved</p>
-    </section>
-    <center>
-        <p style="color: white; z-index: 5; margin-top: -2%; margin-bottom: 0;">© 2024 pizzaburger.com | All rights reserved</p>
-    </center>
+        <h1 style="text-align: center; font-size: max(2.222vw,15px);" id="main">Visit our branches!</h1>
+    
+        <h1 style="font-size: max(1.667vw,13px); margin: 30px 10px 10px 10px;">Our branches</h1>
+        <a href="https://www.google.com/maps">
+            <p style="margin: 10px; font-size: max(0.833vw,9px);">Pizza Burger @ Senayan</p>
+        </a>
+        <a href="https://www.google.com/maps">
+            <p style="margin: 10px; font-size: max(0.833vw,9px);">Pizza Burger @ Alam sutera</p>
+        </a>
+        <a href="https://www.google.com/maps">
+            <p style="margin: 10px; font-size: max(0.833vw,9px);">Pizza Burger @ Kemanggisan</p>
+        </a>
+        <a href="https://www.google.com/maps">
+            <p style="margin: 10px; font-size: max(0.833vw,9px)">Pizza Burger @ Bandung</p>
+        </a>
+    
+        </table> <!--Links dissapear-->
+            <p style="background-color: #300101; color: white; margin:30px 10px 10px 10px; font-size: max(1.667vw,14px);"><b>Pizza Burger -  Fx Sudirman - Jl. Jenderal Sudirman</b></p>
+            <p style="background-color: #300101; color: white; margin:10px; font-size: max(0.833vw,9px);">Telephone: 081234123412</p>
+            <p style=" background-color: #300101; color: white; margin:10px; font-size: max(0.833vw,9px);">Email: pizzaburger@pizzaburger.com</p>
+            <p style="color: white; margin:10px; font-size: max(0.833vw,9px);">Fax: (+6221) 12341234</p>
+            <nav>
+                <div style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-end;">
+                    <a style="float:right; margin: 5px; margin-right: 1%; font-size: max(0.833vw,9px);" href="x.com">Twitter<img src="https://img.icons8.com/?size=48&id=13963&format=png" style="width:20px;height:20px;float:right;border: 0;margin-top: -5%;"> </a>
+                    <a style="float:right;margin: 5px; font-size: max(0.833vw,9px);" href="instagram.com">Instagram<img src="https://img.icons8.com/?size=48&id=32323&format=png" style="width:20px;height:20px;float:right;border: 0;margin-top: -5%;"> </a>
+                    <a style="float:right;margin: 5px; font-size: max(0.833vw,9px);" href="facebook.com">Facebook<img src="https://img.icons8.com/?size=48&id=13912&format=png" style="width:20px;height:20px;float:right;border: 0;margin-top: -4%;"></a>
+                    <a style="float:right;margin: 5px; font-size: max(0.833vw,9px);">081234123412<img src="https://img.icons8.com/?size=48&id=16713&format=png" style="width:20px;height:20px;float:right;border: 0;margin-top: -3%;"></a>
+                </div>
+            </nav>
+            <center>
+            </center>
+            <p style="background-color: #300101; color: white; margin-bottom: 0; text-align: center; font-size: max(0.833vw,9px); width: 100%;">© 2024 pizzaburger.com | All rights reserved</p>
+        </section>
 </body>
 </html>

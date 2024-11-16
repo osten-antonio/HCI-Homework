@@ -2,72 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=2880, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://images.seeklogo.com/logo-png/53/1/pizza-burger-logo-png_seeklogo-536669.png">
     <title>Pizza Burger homepage</title>
 </head>
 <body>
-
+    <!--Font size increase for mobile-->
+    <!--Resize image-->
     <img src="restaurant.webp" id="headerimage">
-    <div id="gradientbackground">
-        <table style="float: right; margin: 1% 5% 0 0; max-height: 99vh;">
-            <tr>
-                <td>
-                    <h1 style="color:white;" id="title">Pizza Burger</h1>
-                    <img src="https://images.seeklogo.com/logo-png/53/1/pizza-burger-logo-png_seeklogo-536669.png" id="icon">                
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p id="info">Located in Senayan, Pizza Burger hits their guests with an interesting <i>fusion</i> between American food and Italian food. <br>Established in <b>2019</b>, <u>this pays homage to the golden era of diners, adding its own twist.</u>      </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="#main">
-                        <button id="menubutton">Menu</button>
-                    </a>
-                </td>
-            </tr>
-        </table>
+    <div id="gradientbackground" > <!--For mobile, change to vertical-->
+        <div style="display: flex; width: 33%; flex-wrap: wrap;  justify-content: right; margin-left: auto;">
+            <div style="justify-content: right; ">
+                <h1 style="color:white;" id="title">Pizza Burger</h1>
+                <img src="https://images.seeklogo.com/logo-png/53/1/pizza-burger-logo-png_seeklogo-536669.png" id="icon">                
+            </div>
         </div>
+        <div>
+            <p id="info">Located in Senayan, Pizza Burger hits their guests with an interesting <i>fusion</i> between American food and Italian food. <br>Established in <b>2019</b>, <u>this pays homage to the golden era of diners, adding its own twist.</u>      </p>
+        </div>
+        <div>
+            <a href="#main"> <!--resize-->
+            <button id="menubutton">Menu</button>
+        </div>
+
     </div>   
 
     <div  style="margin-top: 99vh;">
-  
-
-
-        <h1 class="Signatures" id="main">Our signatures</h1>
+        <h1 class="Signatures" id="main" style="margin-bottom:  5%;">Our signatures</h1>
+        <!--Nested flexbox, for each menu, each flex-->
         <div>
-            <a href="Pizza Page.html">
-                <button class="Signatureselectionl" style="border-radius: 10px;"><img src="Pepperoni Pizza.jpg" style="max-height: 70%; width:70%;"></button>
-                <p class="informleft" style="margin-bottom: 0; font-weight: bold; font-size: xx-large;">Pepperoni Pizza</p>
-                <p class="informleft" style="float:right; margin-top: -20%;">A crispy, hand-tossed crust topped with rich mozzarella, pepperoni, and Italian herbs for a bold, classic flavor.</p>
-                </a>
-        </div>
-        <div>
-            <a href="burgerpizzapage.html">
-                <button class="Signatureselectionr" style="border-radius: 10px;"><img src="Cheese-and-Pepperoni-Pizza-Burger1.webp" style="max-height: 90%; width:90%;"></button>
-                <p class="informright" style=" font-weight: bold; font-size: xx-large;">Cheese and pepperoni pizza burger</p>
-                <p class="informright" style="margin-top: -20%;">A juicy beef patty layered with mozzarella, pepperoni, and rich tomato sauce, all inside a toasted bun infused with pizza crust flavors.</p>            
+            <a href="Pizza Page.html" class="foodselection">
+                <button class="Signatureselectionl" style="border-radius: 10px;  min-width: 150px;"><img src="Pepperoni Pizza.jpg" style="max-height: 70%; width:70%;  min-width: 20%;"></button>
+                <div class="divparagraph">
+                <p style="margin-bottom: 0; font-weight: bold; font-size: max(2vw,13px); color: maroon; text-align: center; margin-bottom: 5%;">Pepperoni Pizza</p>
+                <p class="informleft" style="margin-top: auto;">A crispy, hand-tossed crust topped with rich mozzarella, pepperoni, and Italian herbs for a bold, classic flavor.</p>
+                </div>
             </a>
         </div>
         <div>
-            <a href="cheeseburger page.html">
-                <button class="Signatureselectionl" style="border-radius: 10px;"><img src="cheeseburger.jpg" style="max-height: 100%; width:100%;"></button>
-                <p class="informleft" style="margin-bottom: 0; font-weight: bold; font-size: xx-large;">Cheese burger</p>
-                <p class="informleft" style="float:right; margin-top: -20%;">A juicy, flame-grilled beef patty with melted cheddar, fresh lettuce, tomato, pickles, and signature sauce on a toasted brioche bun.</p></a>        
+            <a href="burgerpizzapage.html" class="foodselectiond">
+                <div class="divparagraph">
+                <p style="margin-bottom: 0; font-weight: bold; font-size: max(2vw,13px); color: maroon; text-align: center; margin-bottom: 5%;">Cheese and pepperoni pizza burger</p>
+                <p class="informright" style="margin-top: auto; margin: 0 10%;">A juicy beef patty layered with mozzarella, pepperoni, and rich tomato sauce, all inside a toasted bun infused with pizza crust flavors.</p>            
+                </div>
+                <button class="Signatureselectionr" style="border-radius: 10px; min-width: 150px;"><img src="Cheese-and-Pepperoni-Pizza-Burger1.webp" style="max-height: 90%; max-width:90%;"></button>
+            </a>
+        </div>
+        <div>
+            <a href="cheeseburger page.html" class="foodselection">
+                <button class="Signatureselectionl" style="border-radius: 10px;  min-width: 150px;"><img src="cheeseburger.jpg" style="max-height: 70%; width:70%; min-width: 20%;"></button>
+                <div class="divparagraph">
+                <p style="margin-bottom: 0; font-weight: bold; font-size: max(2vw,13px); color: maroon; text-align: center; margin-bottom: 5%;">Cheeseburger</p>
+                <p class="informleft" style="margin-top: auto; margin-bottom: 2%;">A juicy, flame-grilled beef patty with melted cheddar, fresh lettuce, tomato, pickles, and signature sauce on a toasted brioche bun.</p>
+                </div>
+            </a>
         </div>
     </div>
         
     <h1 class="Signatures" id="main">Our menu</h1>
 
-    <table>
-        <tr>
-            <td style="width: 45%;"><img src="collage.png"></td>
-            <td><h3>Pizzas</h3>
-                <ol type="I">
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; align-content: center;  justify-content: center;">
+        <div id="collage">
+            <img src="collage.png" style="max-width: 100%; min-width: 60px;">
+        </div> <!--Min width, resize-->
+        <div style="min-width: 20%; padding-left: 45px;">
+        <h3>Pizzas</h3> <!--Font size-->
+                <ol type="I" style="padding-left: 0pt;">
                     <li>Pepperoni Pizza</li>
                     <li>Cheese pizza</li>
                     <li>Hawaiian pizza</li>
@@ -75,26 +76,27 @@
                     <li>Italian pizza</li>
                 </ol>
                 <h3>Burger</h3>
-                <ol type="I">
+                <ol type="I" style="padding-left: 0pt;">
                     <li>Big mac</li>
                     <li>Cheeseburger</li>
                     <li>Filet-o-fish</li>
                 </ol>
                 <h3>Pizza Burger</h3>
-                <ol type="I">
+                <ol type="I" style="padding-left: 0pt;">
                     <li>Cheese and pepperoni <br>pizza burger</li>
                     <li>Beef pizza burger</li>
                     <li>Chicken pizza burger</li>
                     <li>Cheese pizza burger</li>
                 </ol>
                 <h3>Desert</h3>
-                <ol type="I">
+                <ol type="I" style="padding-left: 0pt;">
                     <li>Tiramisu</li>
                     <li>Ice cream</li>
                 </ol>
-        </td>
-            <td style="width: 25%;"><h3 style="margin-right: 5%;">Drinks</h3>
-                <ol type="I">
+        </div>
+        <div style="min-width: 15%; padding-left: 25px;">
+            <h3>Drinks</h3>
+                <ol type="I" style="    padding-left: 0pt;">
                     <li>Mineral water</li>
                     <li>Sparkling water</li>
                     <li>Lemon water</li>
@@ -107,67 +109,71 @@
                     <li>Sprite</li>
                 </ol>
                 <h3 >Alcoholic</h4>
-                <ol type="I ">
+                <ol type="I" style="padding-left: 0pt;">
                     <li>Bintang beer</li>
                     <li>Heineken</li>
                     <li>Soju</li>
                     <li>Vodka</li>
                 <h4></h4>
                 </ol>
-                </div>
-                <div style="float: right; width: 30%;"></td>
-        </tr>
-    </table>
+        </div>
+    </div>
     <details>
         <summary>
             <h1 class="Signatures" id="main">Feedback ▼</h1>
         </summary>
-        <form class="review-container">
-            <label for="Email" style="margin-left: 0.5%; color: maroon; font-weight: bold; font-size: larger;">Email: </label>
+        <form style="display: flex; flex-wrap: wrap; flex-direction: column;">
+            <div style="display: flex; flex-wrap: wrap; flex-direction: row;">
+            <div style="width: fit-content; display: flex; flex-direction: row;">
+            <label for="Email" style="margin-top: 3%; margin-left: 0.5%; color: maroon; font-weight: bold; font-size: max(1.667vw,13px);">Email: </label>
             <input type="email" id="Email" name="Email" placeholder="Email">
-            <label for="Password" style="margin-left: 1%; color: maroon; font-weight: bold; font-size: larger;">Password: </label>
+            </div>
+            <div style="width: fit-content; display: flex; flex-direction: row">
+            <label for="Password" style="margin-top: 3%; margin-left: 1%; color: maroon; font-weight: bold; font-size: max(1.667vw,13px);">Password: </label>
             <input type="password" id="Password" name="Password" placeholder="Password">
-            <h1 style="color: maroon; margin-left: 0.5%;">How was the service?</h1>
+            </div>
+            </div>
+            <h1 style="color: maroon; margin-left: 0.5%; font-size: max(1.667vw,13px);">How was the service?</h1>
             <textarea id="comment" placeholder="Write your experience here..." rows="4"></textarea>
             <button id="submitReview">Submit Review</button>
-            <h1 style="color: maroon; margin-left: 0.5%">How was the food?</h1>
+            <h1 style="color: maroon; margin-left: 0.5%; font-size: max(1.667vw,13px);">How was the food?</h1>
             <textarea id="comment" placeholder="Write your experience here..." rows="4"></textarea>
             <button id="submitReview">Submit Review</button>
         </form>
     </details>
     <section class="foot">
-    <h1 style="text-align: center;" id="main">Visit our branches!</h1>
+    <h1 style="text-align: center; font-size: max(2.222vw,15px);" id="main">Visit our branches!</h1>
 
-    <h1 style="font-size: 1.5rem; margin: 30px 10px 10px 10px;">Our branches</h1>
+    <h1 style="font-size: max(1.667vw,13px); margin: 30px 10px 10px 10px;">Our branches</h1>
     <a href="https://www.google.com/maps">
-        <p style="margin: 10px;">Pizza Burger @ Senayan</p>
+        <p style="margin: 10px; font-size: max(0.833vw,9px);">Pizza Burger @ Senayan</p>
     </a>
     <a href="https://www.google.com/maps">
-        <p style="margin: 10px;">Pizza Burger @ Alam sutera</p>
+        <p style="margin: 10px; font-size: max(0.833vw,9px);">Pizza Burger @ Alam sutera</p>
     </a>
     <a href="https://www.google.com/maps">
-        <p style="margin: 10px;">Pizza Burger @ Kemanggisan</p>
+        <p style="margin: 10px; font-size: max(0.833vw,9px);">Pizza Burger @ Kemanggisan</p>
     </a>
     <a href="https://www.google.com/maps">
-        <p style="margin: 10px;">Pizza Burger @ Bandung</p>
+        <p style="margin: 10px; font-size: max(0.833vw,9px)">Pizza Burger @ Bandung</p>
     </a>
 
-    </table>
-        <p style="color: white; margin:30px 10px 10px 10px; font-size: larger;"><b>Pizza Burger -  Fx Sudirman - Jl. Jenderal Sudirman</b></p>
-        <p style="color: white; margin:10px;">Telephone: 081234123412</p>
-        <p style="color: white; margin:10px;">Email: pizzaburger@pizzaburger.com</p>
-        <p style="color: white; margin:10px;">Fax: (+6221) 12341234</p>
+    </table> <!--Links dissapear-->
+        <p style="background-color: #300101; color: white; margin:30px 10px 10px 10px; font-size: max(1.667vw,14px);"><b>Pizza Burger -  Fx Sudirman - Jl. Jenderal Sudirman</b></p>
+        <p style="background-color: #300101; color: white; margin:10px; font-size: max(0.833vw,9px);">Telephone: 081234123412</p>
+        <p style=" background-color: #300101; color: white; margin:10px; font-size: max(0.833vw,9px);">Email: pizzaburger@pizzaburger.com</p>
+        <p style="color: white; margin:10px; font-size: max(0.833vw,9px);">Fax: (+6221) 12341234</p>
         <nav>
-        <a style="float:right; margin: 5px; margin-right: 1%;" href="x.com">Twitter</a><img src="https://img.icons8.com/?size=48&id=13963&format=png" style="width:20px;height:20px;float:right;border: 0;"> 
-        <a style="float:right;margin: 5px;" href="instagram.com">Instagram</a><img src="https://img.icons8.com/?size=48&id=32323&format=png" style="width:20px;height:20px;float:right;border: 0;"> 
-        <a style="float:right;margin: 5px;" href="facebook.com">Facebook</a><img src="https://img.icons8.com/?size=48&id=13912&format=png" style="width:20px;height:20px;float:right;border: 0;">
-        <a style="float:right;margin: 5px;">081234123412</a><img src="https://img.icons8.com/?size=48&id=16713&format=png" style="width:20px;height:20px;float:right;border: 0;">
+            <div style="display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-end;">
+                <a style="float:right; margin: 5px; margin-right: 1%; font-size: max(0.833vw,9px);" href="x.com">Twitter<img src="https://img.icons8.com/?size=48&id=13963&format=png" style="width:20px;height:20px;float:right;border: 0;margin-top: -5%;"> </a>
+                <a style="float:right;margin: 5px; font-size: max(0.833vw,9px);" href="instagram.com">Instagram<img src="https://img.icons8.com/?size=48&id=32323&format=png" style="width:20px;height:20px;float:right;border: 0;margin-top: -5%;"> </a>
+                <a style="float:right;margin: 5px; font-size: max(0.833vw,9px);" href="facebook.com">Facebook<img src="https://img.icons8.com/?size=48&id=13912&format=png" style="width:20px;height:20px;float:right;border: 0;margin-top: -4%;"></a>
+                <a style="float:right;margin: 5px; font-size: max(0.833vw,9px);">081234123412<img src="https://img.icons8.com/?size=48&id=16713&format=png" style="width:20px;height:20px;float:right;border: 0;margin-top: -3%;"></a>
+            </div>
         </nav>
         <center>
         </center>
+        <p style="background-color: #300101; color: white; margin-bottom: 0; text-align: center; font-size: max(0.833vw,9px); width: 100%;">© 2024 pizzaburger.com | All rights reserved</p>
     </section>
-    <center>
-        <p style="color: white; z-index: 5; margin-top: -2%; margin-bottom: 0;">© 2024 pizzaburger.com | All rights reserved</p>
-    </center>
-</body>
+    </body>
 </html>
